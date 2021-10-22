@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/css/all.min.css">
+</head>
+
+<body>
+
+   <header>
+      <i class="fas fa-circle iconHeader menu-toggle"></i>
+   </header>
+
+
+   <div class="canvas">
+      <div class="side-nav">
+         Menu goes here
+      </div>
+
+      <div class="main-content">
+         <button class=""><i class="fas fa-align-left iconSize"></i></button>
+         <p>Content goes here</p>
+      </div>
+
+   </div>
+
+   <script>
+      // Grab Everything We Need
+      const canvas = document.querySelector('.canvas')
+      const button = document.querySelector('.menu-toggle')
+
+      // Listen For the Button Click
+      button.addEventListener('click', () => {
+         canvas.classList.toggle("show-nav");
+      })
+
+   </script>
+
+</body>
+</html>
