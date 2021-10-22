@@ -38,16 +38,13 @@ header {
    transform: translateX(var(--side-nav-width));
 }
 
-
 /* Side Nav */
 .side-nav {
-   word-wrap: break-word;
    position: absolute;
    background: #5eabed;
    width: var(--side-nav-width);
    transform: translateX(calc(var(--side-nav-width) * -1));
 }
-
 
 /* Main Content */
 .main-content {
